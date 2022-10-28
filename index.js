@@ -155,8 +155,8 @@ const getResult = () => {
 
 
 function timer() {
-    let min = 10
-    var sec = 60
+    let min = 1
+    var sec = 1
     var timer = setInterval(function () {
 
         document.getElementById('timer').innerHTML = `00:${min < 11 ? '0' : ''}${min > 0 ? min - 1 : 0}:${sec < 10 ? '0' : ''}${sec}`;
@@ -169,7 +169,7 @@ function timer() {
         if (sec === 0 && min > 0) {
             sec = 60
         }
-        if (min < 0 && sec < 0) {
+        if (min === 0 && sec === 0) {
             clearInterval(timer);
             window.location.href = 'timeout.html'
         }
