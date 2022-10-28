@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Roboto&family=Roboto+Condensed:wght@700&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="mcq.css">
+    <title>MCQ</title>
+</head>
+
+<body>
+    <div class="mcq">
+        <div class="mcq-container">
+            <div class="card">
+                <h6 class="heading">Remaining Time: <span id="timer">00:10:00</span></h6>
+                <button onclick="getResult()" id="finish-button" class="finish-button">Finish</button>
+            </div>
+            <div id="cards">
+                <div class="card item">
+                    <form class="options" action="#">
+                        <h6 class="heading">1. What is the past form of 'eat' ?</h6>
+                        <br>
+                        <input type="radio" id="eat1" name="verb" value="eat1">
+                        <label for="eat1">eat</label>
+                        <br>
+                        <input type="radio" id="eat" name="verb" value="eat">
+                        <label for="eat">meal</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+
+<body>
+    <div class="result">
+        <div class="result-container">
+            <div class="card">
+                <img src="Resources/congrats.svg" alt="">
+                <h1 class="result-heading">MCQ Result</h1>
+                <p class="score-text">You Got <span id="score"></span> Score</p>
+                <a href="mcq.html"><button class="start-again-button">Start Again</button></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("score").innerHTML = sessionStorage.getItem("result")
+    </script>
+</body>
+
+</html>
