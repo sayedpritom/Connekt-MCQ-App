@@ -15,22 +15,11 @@
 <body>
     <div class="mcq">
         <div class="mcq-container">
-            <div class="card">
+            <div class="card count-down-card">
                 <h6 class="heading">Remaining Time: <span id="timer">00:10:00</span></h6>
                 <button onclick="getResult()" id="finish-button" class="finish-button">Finish</button>
             </div>
-            <div id="cards">
-                <div class="card item">
-                    <form class="options" action="#">
-                        <h6 class="heading">1. What is the past form of 'eat' ?</h6>
-                        <br>
-                        <input type="radio" id="eat1" name="verb" value="eat1">
-                        <label for="eat1">eat</label>
-                        <br>
-                        <input type="radio" id="eat" name="verb" value="eat">
-                        <label for="eat">meal</label>
-                    </form>
-                </div>
+            <div id="cards" class="mcq-cards">
             </div>
         </div>
     </div>

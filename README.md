@@ -6,6 +6,7 @@
 * 10 minutes time barrier with functioning countdown timer
 * If the user fails to finish on time then he will be taken to the Time Out page
 * And if the user finishes on time & clicks Finish Button then he will be taken to the Result Page
+* Responsive Layouts
 
 **Used technologies in the front-end:**
 * HTML, CSS, 

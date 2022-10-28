@@ -106,15 +106,11 @@ const data = [
     }
 ]
 
-const optionsDiv = document.getElementById('options')
-
 let cardsContainer = document.getElementById('cards')
 
 const elements = data.map((data, index) => {
-
-    let html = `<h6 class="heading options-headings">${index + 1}. ${data.title}</h6>`;
-
-
+    let html = `<h3 class="heading options-headings">${index + 1}. ${data.title}</h3>`;
+    
     data.options.map((option, index) => {
         html += (
             `<input type="radio" id=${data.index + index} name=${data.index}>
@@ -152,6 +148,18 @@ const getResult = () => {
     sessionStorage.setItem('result', result.length)
     window.location.href = 'result.html'
 }
+
+cardsContainer.addEventListener("click", e => {
+    const element = e.target
+    const clickedInputsAttributeName = element.getAttribute('for')
+
+    const index = element.getAttribute('name')
+
+    index && document.getElementsByName(index).forEach(element => {
+        if(element.getAttribute('id') !== clickedInputsAttributeName)  element.disabled = true
+    });
+
+})
 
 
 function timer() {
