@@ -1,4 +1,4 @@
-## Connekt MCQ Application. Live site: https://sayedpritom.github.io/Connekt-MCQ-App/home.html
+## Connekt MCQ Application. Live site: https://sayedpritom.github.io/Grammer-MCQ-App/home.html
 
 **Application Features and Functionalities:**
 * User gets 10 multi-choice questions to answer 
